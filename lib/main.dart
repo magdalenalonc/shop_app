@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'Shopping App',
       theme: ThemeData(
         fontFamily: 'Lato',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromRGBO(254, 206, 1, 1),
+        ),
       ),
       home: HomePage(),
     );
