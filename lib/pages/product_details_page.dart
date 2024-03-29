@@ -58,7 +58,10 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           const Spacer(),
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Image.asset(widget.product['imageUrl'] as String),
+            child: Image.asset(
+              widget.product['imageUrl'] as String,
+              height: 250.0,
+            ),
           ),
           const Spacer(flex: 2),
           Container(
@@ -109,7 +112,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                     onPressed: onTap,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Theme.of(context).colorScheme.primary,
-                      minimumSize: const Size(double.infinity, 50.0),
+                      fixedSize: const Size(350.0, 50.0),
                     ),
                     icon: const Icon(
                       Icons.shopping_cart,

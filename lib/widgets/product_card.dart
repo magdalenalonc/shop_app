@@ -37,7 +37,10 @@ class ProductCard extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Center(
-            child: Image.asset(image, height: 175),
+            child: Image.asset(
+              image,
+              height: 175.0,
+            ),
           ),
         ],
       ),
